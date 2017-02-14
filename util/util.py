@@ -83,8 +83,6 @@ def get_songs_from_playlist(user, playlist_id, spotify_instance):
 
 
 def deconstruct_genre(filename):
-    from util.util import read_csv_to_list_of_dictionaries, write_list_of_dictionaries_to_file
-
     data = read_csv_to_list_of_dictionaries(filename)
     genre_data = []
 
