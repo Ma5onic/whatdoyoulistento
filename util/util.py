@@ -23,6 +23,23 @@ def create_auth_session():
     return sp
 
 
+def read_csv_to_list_of_dictionaries(filename):
+    """
+    input - list of dictionaries as data, filename to be read from
+    output - list of dictionaries
+    """
+    import unicodecsv as csv
+
+    data = []
+
+    with open(filename, "rb") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            data.append(row)
+
+    return data
+
+
 def write_list_of_dictionaries_to_file(data, filename, mode=None):
     """
     input - list of dictionaries as data, filename to be written to
