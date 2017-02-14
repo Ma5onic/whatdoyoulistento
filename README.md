@@ -40,7 +40,7 @@ The real purpose behind this project is to satisfy my curiosity, answer other mu
 
 4) How have your tastes changed over time?
 
-- Once I started looking through Spotify I noticed that I have many, lets call them 'legacy' playlists. I have been a religious Spotify since 2011 and I believe I should have enough data to measure change in music taste by examining the genre/saved song proportions year to year. Ex: In 2011 80% of my saved tracks were indie folk, in 2012 60% and 40% electronica etc)
+- Once I started looking through Spotify I noticed that I have many, lets call them 'legacy' playlists. I have been a religious Spotify user since 2011 and I believe I should have enough data to measure change in music taste by examining the genre/saved song proportions year to year. Ex: In 2011 80% of my saved tracks were indie folk, in 2012 60% and 40% electronica etc)
 
 ### Collecting Data
 
