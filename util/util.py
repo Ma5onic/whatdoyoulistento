@@ -80,3 +80,24 @@ def get_songs_from_playlist(user, playlist_id, spotify_instance):
     tracks.extend(result)
 
     return tracks
+
+
+def deconstruct_genre(filename):
+    from util.util import read_csv_to_list_of_dictionaries, write_list_of_dictionaries_to_file
+
+    data = read_csv_to_list_of_dictionaries(filename)
+    genre_data = []
+
+    # for each item in the row 'genre' field, create a new row with only the
+    # genre changing
+    for row in data:
+        genre_list = row['genres'].replace("[", "").replace("]", "").split(",")
+
+        # append these rows to genre_blast
+        for genre in genre_list:
+            row['genre'] = genre
+            genre_data.append(row.copy())
+
+    # write genre blast to its own csv
+    outfile = filename.split(".")[0] + "_genre.csv"
+    write_list_of_dictionaries_to_file(genre_data, outfile)
